@@ -2,8 +2,8 @@ const express = require('express');
 const TelegramBot = require('node-telegram-bot-api');
 const features = require('../features');
 const app = express();
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const BOT_USERNAME = process.env.BOT_USERNAME || 'Danxyy_bot';
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;8436275133:AAGkRnFUdh4QkwOkgSP7mVORMUA0IKhq41o
+const BOT_USERNAME = process.env.BOT_USERNAME || 'YELZZ ASISTEN🗿🗿';
 
 if (!BOT_TOKEN) {
   console.error('ERROR: TELEGRAM_BOT_TOKEN not found in environment variables!');
@@ -29,7 +29,7 @@ app.post('/api/bot', async (req, res) => {
 
 app.get('/set-webhook', async (req, res) => {
   try {
-    const vercelUrl = 'https://script-bot-teleram-vercel.vercel.app';
+    const vercelUrl = 'https://script-bot-teleram-vercel-eight.vercel.app';
     const webhookUrl = `${vercelUrl}/api/bot`;
     
     await bot.deleteWebHook();
